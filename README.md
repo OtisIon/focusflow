@@ -5,9 +5,9 @@ Stay focused with a Pomodoro timer, site blocker, sticky notes and more, right i
 [Get it on the Chrome Web Store](https://chromewebstore.google.com/detail/focusflow/pdigglodeopcihimpdkcbkoemhbjbdno)
 
 ## Screenshots
-![Timer](timer.png)
-![Focus Mode](focus.png)
-![Sticky Notes](notes.png)
+![FocusFlow](hero.png)
+![Features](features.png)
+![Focus Mode and Sticky Notes](focus-mode.png)
 
 ## Features
 - Pomodoro timer
