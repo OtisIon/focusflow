@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FocusFlow</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo">
+        <span>Focus</span>
+        <span>Flow</span>
+      </div>
+      <button class="nav-btn active" data-tab="pomodoro" title="Pomodoro">🕐</button>
+      <button class="nav-btn" data-tab="focus" title="Focus Mode">🚫</button>
+      <button class="nav-btn" data-tab="notes" title="Sticky Notes">📝</button>
+      <button class="nav-btn" data-tab="breathe" title="Breathing">🪷</button>
+      <button class="nav-btn" data-tab="word" title="Word of the Day">📖</button>
+      <div class="sidebar-spacer"></div>
+      <a class="coffee-btn" href="#" id="coffeeBtn" title="Support FocusFlow - Buy me a chai 🍵">🍵</a>
+    </div>
+    <div class="main">
+
+      <div class="tab active" id="pomodoro">
+        <h2>Pomodoro</h2>
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        <p class="session-label" id="sessionLabel">Focus Session</p>
+        <div class="timer-buttons">
+          <button class="btn" id="startBtn">Start</button>
+          <button class="btn" id="resetBtn">Reset</button>
+          <button class="btn secondary small" id="floatBtn">🕐 Float</button>
+        </div>
+      </div>
+
+      <div class="tab" id="focus">
+        <h2>Focus Mode</h2>
+        <p class="section-hint">Recommended:</p>
+        <div class="recommended-sites">
+          <span class="rec-site" data-site="instagram.com">Instagram</span>
+          <span class="rec-site" data-site="tiktok.com">TikTok</span>
+          <span class="rec-site" data-site="netflix.com">Netflix</span>
+          <span class="rec-site" data-site="youtube.com">YouTube</span>
+          <span class="rec-site" data-site="twitter.com">Twitter</span>
+          <span class="rec-site" data-site="reddit.com">Reddit</span>
+          <span class="rec-site" data-site="snapchat.com">Snapchat</span>
+          <span class="rec-site" data-site="discord.com">Discord</span>
+        </div>
+        <div class="input-row">
+          <input type="text" id="siteInput" placeholder="e.g. instagram.com" />
+          <button class="btn" id="addSite">Add</button>
+        </div>
+        <ul id="blockedList"></ul>
+        <button class="btn danger" id="toggleFocus">Enable Focus</button>
+      </div>
+
+      <div class="tab" id="notes">
+        <h2>Sticky Notes</h2>
+        <p class="note-info">Create up to 5 sticky notes. They float on any webpage.</p>
+        <button class="btn" id="createNote">+ Create Sticky Note</button>
+        <div id="savedNotesSection">
+          <p class="section-hint">Saved Notes:</p>
+          <div id="savedNotesList"></div>
+        </div>
+      </div>
+
+      <div class="tab" id="breathe">
+        <h2>Breathe</h2>
+        <div class="breath-container">
+          <div class="breath-circle" id="breathCircle"></div>
+          <p class="breath-label" id="breathLabel">Press Start</p>
+        </div>
+        <button class="btn" id="breathBtn">Start</button>
+      </div>
+
+      <div class="tab" id="word">
+        <h2>Word of the Day</h2>
+        <div class="word-card">
+          <p class="word-text" id="wordText">Loading...</p>
+          <p class="word-type" id="wordType"></p>
+          <p class="word-def" id="wordDef"></p>
+          <p class="word-example" id="wordExample"></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

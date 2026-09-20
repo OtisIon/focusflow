@@ -1,0 +1,149 @@
+.ff-sticky-note {
+  position: fixed;
+  width: 260px;
+  background-color: #fef9c3;
+  border-radius: 6px;
+  box-shadow: 4px 4px 16px rgba(0,0,0,0.35);
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 2147483647;
+  overflow: hidden;
+}
+
+.ff-note-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background-color: #fde047;
+  cursor: grab;
+  user-select: none;
+}
+
+.ff-note-header:active { cursor: grabbing; }
+
+.ff-note-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #713f12;
+}
+
+.ff-note-actions { display: flex; gap: 4px; }
+
+.ff-note-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #92400e;
+  padding: 2px 5px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+
+.ff-note-btn:hover { background-color: #fbbf24; }
+
+.ff-note-body {
+  padding: 8px;
+  background-color: #fef9c3;
+}
+
+.ff-note-textarea {
+  width: 100%;
+  height: 130px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #422006;
+  resize: none;
+  line-height: 1.6;
+}
+
+.ff-note-textarea::placeholder { color: #a16207; }
+
+.ff-note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  border-top: 1px solid #fde047;
+  margin-top: 4px;
+}
+
+.ff-char-count { font-size: 10px; color: #a16207; }
+.ff-saved-status { font-size: 10px; color: #15803d; }
+
+#ff-float-timer {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #a855f7;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #a855f755;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 2147483646;
+  overflow: hidden;
+  min-width: 130px;
+}
+
+#ff-float-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background-color: #2d1b4e;
+  cursor: grab;
+  user-select: none;
+}
+
+#ff-float-header:active { cursor: grabbing; }
+
+#ff-float-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a855f7;
+  letter-spacing: 1.5px;
+}
+
+#ff-float-controls { display: flex; gap: 4px; }
+
+.ff-float-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  color: #a855f7;
+  padding: 1px 4px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: background 0.15s ease;
+}
+
+.ff-float-btn:hover { background-color: #3a2a5e; }
+
+#ff-float-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+}
+
+#ff-float-time {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+#ff-float-msg {
+  display: none;
+  padding: 6px 10px;
+  font-size: 11px;
+  color: #e0e0e0;
+  background-color: #2d1b4e;
+  text-align: center;
+  border-top: 1px solid #3a2a5e;
+}
